@@ -25,15 +25,15 @@ p    {color: black;}
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
-    type: 'bar',
+    type: 'pie',
 
     // The data for our dataset
     data: {
         labels: ['Meghan', 'Patrick','Erin','Shannon and Adam','Charlotte','Rhino'],
         datasets: [{
             label: 'Gingie Comp 2020',
-            backgroundColor: 'rgb(0, 100, 0)',
-            borderColor: 'rgb(255, 0, 0)',
+            backgroundColor: 'rgb(20, 100, 0)',
+            borderColor: 'rgb(255, 20, 0)',
             data: [54, 26, 22, 16, 12, 8],
         }]
     },
