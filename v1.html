@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: white;}
+h1   {color: black;}
+p    {color: black;}
+</style>
+</head>
+<body>
+
+<h1 style="color: black">Version 1</h1>
+<canvas id="myChart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['Meghan', 'Patrick','Erin','Shannon and Adam','Charlotte','Rhino'],
+        datasets: [{
+            label: 'Gingie Comp 2020',
+            backgroundColor: 'rgb(0, 100, 0)',
+            borderColor: 'rgb(255, 0, 0)',
+            data: [57, 23, 21, 14, 10, 6],
+        }]
+    },
+        
+    // Configuration options go here
+    options: {
+    scales: {
+            yAxes: [{
+                display: true,
+                stacked: true,
+                ticks: {
+                    min: 0, // minimum value
+                    max: 60 // maximum value
+                }
+            }]
+        }
+    }
+});
+
+
+</script>
+
+
+</body>
+</html>
